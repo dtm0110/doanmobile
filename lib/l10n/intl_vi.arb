@@ -1,0 +1,3 @@
+{
+  "messageSlippage" : "Nếu tỷ giá giữa thời điểm đặt lệnh và thời điểm xác nhận lệnh thay đổi thì đó được gọi là \"trượt giá\". Giao dịch Hoán đổi của bạn sẽ tự động huỷ nếu mức trượt giá vượt quá chế độ cài đặt \"mức trượt giá tối đa\" của bạn."
+}
