@@ -44,7 +44,7 @@ class ProfileViewModel extends BaseViewModel {
     safeCallApi(
       _authRepository.userInfo(),
       onSuccess: (p0) {
-        account = p0;
+        account = p0 as Account?;
         p0?.let((it) => _authRepository.updateUserLocal(it));
       },
       onComplete: () {

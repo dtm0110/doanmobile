@@ -106,12 +106,12 @@ class HomeView extends StatelessWidget {
           padding: EdgeInsets.zero,
           physics: const BouncingScrollPhysics(),
           itemBuilder: (context, index) {
-            return snapshot.data
-                    ?.getOrNull(index)
+            return (snapshot.data as List)
+                    .getOrNull(index)
                     ?.let((it) => jobItem(context, it)) ??
                 Container();
           },
-          itemCount: snapshot.data?.length ?? 0,
+          itemCount: (snapshot.data as List).length ?? 0,
         ),
       );
 

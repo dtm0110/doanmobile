@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
     return BaseApp(
         child: MaterialApp(
       title: "S.of(context).monowallet",
+      showSemanticsDebugger: false,
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,

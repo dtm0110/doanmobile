@@ -51,7 +51,7 @@ class ImageKit extends StatelessWidget {
               ));
     return borderRadius?.let((it) => ClipRRect(
               child: image,
-              borderRadius: it,
+              borderRadius: it as BorderRadius,
             )) ??
         image;
   }

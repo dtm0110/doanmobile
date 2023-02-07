@@ -25,7 +25,7 @@ class JobViewModel extends BaseViewModel {
     setState(ViewState.Busy);
     job.id?.let(
       (it) {
-        safeCallApi(
+        safeCallApi<dynamic>(
           _careerRepository.saveCareer(it),
           onSuccess: (p0) {
             onCareerListener.addEventValid(JobState.careerSaved);
@@ -42,7 +42,7 @@ class JobViewModel extends BaseViewModel {
     setState(ViewState.Busy);
     job.id?.let(
       (it) {
-        safeCallApi(
+        safeCallApi<dynamic>(
           _careerRepository.applyCareer(it),
           onSuccess: (p0) {
             onCareerListener.addEventValid(JobState.careerApplied);
